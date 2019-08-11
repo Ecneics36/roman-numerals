@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+  font-size: 1.5em;
+  width: 100vw;
+  margin: 40px 0 40px 0;
+  text-align: center;
+}
+
+#content-container {
+  display: grid;
+  grid-template-areas:
+    'instructions instructions instructions'
+    'input input button'
+    'results results results';
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+#instructions {
+  grid-area: instructions;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.5em;
+  margin: 0 20px 0 20px;
+  padding: 10px;
+}
+
+#numbers {
+  grid-area: input;
+  font-size: 3em;
+  margin: 20px;
+  height: 70px;
+  padding: 0 0 0 10px;
+}
+
+#convert {
+  grid-area: button;
+  font-size: 2em;
+  margin: 20px;
+  height: 70px;
+  width: 150px;
+  padding: 0;
+}
+
+#result {
+  grid-area: results;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+}
